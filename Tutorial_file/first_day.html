@@ -1,0 +1,119 @@
+ 
+---
+
+
+<!-- 
+first-day  tutorials content  -->
+
+# 📘 HTML Notes
+
+---
+
+## 🔹 1. Comments in Code
+
+> **Definition**:
+> In code, **comments** are used to explain the logic or purpose of the code and why it is written.
+> They do **not affect** how the code runs and are only meant for human understanding.
+
+---
+
+## 🔹 2. Text Formatting Tags in HTML
+
+| Tag        | Description                     |
+| ---------- | ------------------------------- |
+| `<b>`      | **Bold text**                   |
+| `<strong>` | <strong>Important text</strong> |
+| `<i>`      | *Italic text*                   |
+| `<em>`     | <em>Emphasized text</em>        |
+| `<mark>`   | <mark>Marked text</mark>        |
+| `<small>`  | <small>Smaller text</small>     |
+| `<del>`    | <del>Deleted text</del>         |
+| `<ins>`    | <ins>Inserted text</ins>        |
+| `<sub>`    | Sub<sub>script</sub> text       |
+| `<sup>`    | Super<sup>script</sup> text     |
+
+---
+
+## 🔹 3. Character Entities in HTML
+
+Character entities are used to display **reserved characters** (e.g., `<`, `>`, `&`) or symbols not easily typed (e.g., `©`, `€`, `®`).
+
+### ✅ Syntax:
+
+* **Named entity**: `&entity_name;`
+* **Numeric entity (decimal)**: `&#entity_number;`
+* **Numeric entity (hex)**: `&#xhex_number;`
+
+### 📋 Common Character Entities
+
+| Character | Entity Name | Entity Number | Description           |
+| --------- | ----------- | ------------- | --------------------- |
+| `"`       | `&quot;`    | `&#34;`       | Double quotation mark |
+| `'`       | `&apos;`    | `&#39;`       | Apostrophe            |
+| `&`       | `&amp;`     | `&#38;`       | Ampersand             |
+| `<`       | `&lt;`      | `&#60;`       | Less-than sign        |
+| `>`       | `&gt;`      | `&#62;`       | Greater-than sign     |
+| ` `       | `&nbsp;`    | `&#160;`      | Non-breaking space    |
+| `©`       | `&copy;`    | `&#169;`      | Copyright symbol      |
+| `®`       | `&reg;`     | `&#174;`      | Registered trademark  |
+| `€`       | `&euro;`    | `&#8364;`     | Euro sign             |
+| `£`       | `&pound;`   | `&#163;`      | Pound sign            |
+| `¥`       | `&yen;`     | `&#165;`      | Yen sign              |
+| `¢`       | `&cent;`    | `&#162;`      | Cent sign             |
+
+### 💡 Tips:
+
+* Use **named entities** for better readability.
+* Use **numeric entities** for uncommon characters.
+* Always **escape** `&`, `<`, `>` in HTML content to preserve structure.
+
+### 🔸 Example Usage
+
+```html
+<p>5 &lt; 10 is true</p>
+<p>Use &amp; to represent the ampersand</p>
+<p>Price: 100 &euro;</p>
+```
+
+---
+
+## 🔹 4. Ordered List
+
+> In HTML, an **ordered list** (`<ol>`) is used to display points in a specific sequence.
+> Lists can also be **nested** to show hierarchy.
+
+### Example:
+
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item
+    <ol>
+      <li>Sub-item A</li>
+      <li>Sub-item B</li>
+    </ol>
+  </li>
+</ol>
+```
+
+---
+
+## 🔹 5. `value` Attribute in HTML Forms
+
+> The `value` attribute in form input elements (like `<input>`) is used to **specify the data that will be sent** from the **client to the server** upon submission.
+
+### 🔸 Example:
+
+```html
+<form action="/submit">
+  <input type="text" name="username" value="john_doe">
+  <input type="submit">
+</form>
+```
+
+* Whatever is placed inside the `value` attribute is what gets **transferred to the server**.
+* It is used to **pre-fill data** or **store hidden data**.
+
+---
+
+Let me know if you'd like this as a **PDF**, **downloadable HTML file**, or want to include **more HTML elements**!
