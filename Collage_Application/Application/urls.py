@@ -23,5 +23,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('',views.Home,name="Home"),
     path('about/',views.about,name="about"),
-    path('about/',views.contacts,name="contacts"),
+    path('contact/',views.contacts,name="contacts"),
+    path('send_mail_page/',views.send_mail_page,name="send_mail_page"),
 ]
+ 

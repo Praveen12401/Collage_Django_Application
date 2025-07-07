@@ -6,6 +6,12 @@
     <title>contacts</title>
 </head>
 <body>
-    <h1> contacts page </h1>
+  <h2>Contact Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
