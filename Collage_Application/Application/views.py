@@ -3,7 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render ,redirect
 from django.core.mail import send_mail
 from django.conf import settings
-from ..my_app.forms import ContactForm
+ 
+
 
  
 def Home(request):
@@ -13,19 +14,20 @@ def Home(request):
 def about(request):
     return render(request, "about.html")
 
-def contact(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
+def contacts(request):
+    return HttpResponse("contacts")
+#     if request.method == 'POST':
+#         form = ContactForm(request.POST)
         
-        if form.is_valid():
-            return HttpResponse("Yay! you are human.")
-        else:
-            return HttpResponse("OOPS! Bot suspected.")
+#         if form.is_valid():
+#             return HttpResponse("Yay! you are human.")
+#         else:
+#             return HttpResponse("OOPS! Bot suspected.")
           
-    else:
-        form = ContactForm()
+#     else:
+#         form = ContactForm()
         
-    return render(request, 'contacts.html', {'form':form})
+#     return render(request, 'contacts.html', {'form':form})
 
 
 
