@@ -15,19 +15,11 @@ def about(request):
     return render(request, "about.html")
 
 def contacts(request):
-    return HttpResponse("contacts")
-#     if request.method == 'POST':
-#         form = ContactForm(request.POST)
+     
+ 
+       
         
-#         if form.is_valid():
-#             return HttpResponse("Yay! you are human.")
-#         else:
-#             return HttpResponse("OOPS! Bot suspected.")
-          
-#     else:
-#         form = ContactForm()
-        
-#     return render(request, 'contacts.html', {'form':form})
+    return render(request, 'contacts.html')
 
 
 

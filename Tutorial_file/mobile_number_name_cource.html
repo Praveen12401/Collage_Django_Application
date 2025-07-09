@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        input[type="text"], input[type="date"], input[type="email"], select {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-container {
+            text-align: center;
+        }
+        input[type="checkbox"] {
+            margin: 0;
+        }
+    </style> 
+</head>
+<body>
+
+<h2>Academic Details</h2>
+<table>
+    <tr>
+        <th>Academic Session</th>
+        <th>College</th>
+        <th>Admission Mode</th>
+        <th>State</th>
+    </tr>
+    <tr>
+        <td><select>
+            <option>Select session</option>
+        </select></td>
+        <td><select>
+            <option>Select College</option>
+        </select></td>
+        <td><select>
+            <option>Select Mode</option>
+        </select></td>
+        <td><select>
+            <option>Country</option>
+        </select></td>
+    </tr>
+    <tr>
+        <th>Batch</th>
+        <th>Programme</th>
+        <th>Branch</th>
+        <th>SECTION</th>
+    </tr>
+    <tr>
+        <td><select>
+            <option>Select Batch</option>
+        </select></td>
+        <td><select>
+            <option>Select Programme</option>
+        </select></td>
+        <td><select>
+            <option>Select Branch</option>
+        </select></td>
+        <td><select>
+            <option>Select Section</option>
+        </select></td>
+        
+    </tr>
+    <tr>
+        <th>Year</th>
+        <th>Section</th>
+        <th>Admission Date</th>
+        <th>Mobile</th>
+    </tr>
+    <tr>
+        <td><select>
+            <option>Select year</option>
+        </select></td>
+        <td><select>
+            <option>Select section</option>
+        </select></td>
+        <td><input type="date" placeholder="dd-mm-yyyy"></td>
+        <td><input type="email" placeholder="Email"></td>
+    </tr>
+</table>
+
+<h2>Personal Details</h2>
+<table>
+     
+    <tr>
+        <th>Initial</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Current Address :</th>
+        <th class="checkbox-container">☐ Same As Current Address</th>
+        <th>Permanent Address :</th>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" placeholder="Address 1"></td>
+        <td></td>
+        <td><input type="text" placeholder="Address 1"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" placeholder="Address 2"></td>
+        <td></td>
+        <td><input type="text" placeholder="Address 2"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" placeholder="Address 3"></td>
+        <td></td>
+        <td><input type="text" placeholder="Address 3"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" placeholder="City"></td>
+        <td></td>
+        <td><input type="text" placeholder="City"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" placeholder="State"></td>
+        <td></td>
+        <td><input type="text" placeholder="State"></td>
+    </tr>
+</table>
+
+<h2>Parents Details</h2>
+<table>
+    <tr>
+        <th>Parent's Name</th>
+        <th>Father's Mobile</th>
+        <th>Father's Occupation</th>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>Mother's Name</th>
+        <th>Mother's Mobile</th>
+        <th>Mother's Occupation</th>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+</table>
+
+</body>
+</html>
