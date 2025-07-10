@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index8</title>
+    <style>
+        div{
+                color: aqua;
+                border: 1px solid gray;
+        }
+        div+h1{
+                color: rgb(236, 240, 9);
+        }
+        .header1{
+            width:500px;
+            height:500px;
+            color: blue;
+            border: 3px solid rgb(13, 248, 52);
+        }
+        
+        .header1>p:nth-child(2n+1){
+            color: rgb(209, 20, 115);
+            font-family: 'Times New Roman', Times, serif;
+               border: 2px solid var(--text-color);
+               font-weight: 20px;
+               font-size: 20px;
+        }
+        .header1:not(p){
+            color: rgb(52, 247, 13);
+            font-family: 'Times New Roman', Times, serif;
+               border: 2px solid rgb(36, 13, 248);
+               font-weight: 20px;
+               font-size: 20px;
+        }
+        /* gloable css hai variable banakar any style me use kar sakte hai use name jo define kiya hai */
+        :root{
+            --bg-color:rgb(252, 190, 224);
+            --font-size:20px;
+            --text-color:red;
+        }
+        body{
+            background: var(--bg-color);
+            /* font-size: var(--font-size); */
+            color: var(--text-color);
+        }
+
+            .header1 button{
+                --text-color:green;
+                --fontsize2:50px;
+                color: var(--text-color);
+                font-size:var(--fontsize2) ;
+            }
+            button{
+                color:var(--text-color);
+                font-size:var(--fontsize2);
+            }
+    </style>
+</head>
+<body>
+    <div>
+
+        this is a pharagrapv 1
+    </div>
+    <h1> hello every one</h1>
+    <h1> hello every one</h1>
+    <h1> hello every one</h1>
+    <div class="header1">
+        <button>header button </button>
+
+          
+
+    <p> hello every one1</p>
+    <p> hello every one2</p>
+    <p> hello every one3 </p>
+    <h1>heading inside the paragrph</h1>
+        
+    <p> new11 good morning</p>
+    <p> hello every one2</p>
+    <p> hello every one3    </p>
+     <h1>heading inside the paragrph</h1>
+        
+        <p> new11 good morning</p>
+      </div>
+
+   <button>button1</button><br>
+   <button>button1</button><br>
+   <button>button1</button><br>
+   <button>button1</button><br>
+   <button>button1</button><br>
+  
+</body>
+</html>
