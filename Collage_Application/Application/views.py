@@ -14,12 +14,11 @@ def Home(request):
 def about(request):
     return render(request, "about.html")
 
-def contacts(request):
-     
- 
-       
-        
+def contacts(request):   
     return render(request, 'contacts.html')
+
+def login(request):   
+    return render(request, 'login.html')
 
 
 
@@ -41,3 +40,35 @@ def send_mail_page(request):
             context['result'] = 'All fields are required'
     
     return render(request, "MailApp.html", context) 
+
+
+import requests
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+CLERK_SECRET_KEY = "your-clerk-secret-key"
+
+@csrf_exempt
+def clerk_callback(request):
+    session_token = request.headers.get("Authorization")
+    if not session_token:
+        return JsonResponse({"error": "Missing token"}, status=401)
+
+    headers = {
+        "Authorization": session_token,
+        "Content-Type": "application/json",
+    }
+
+    response = requests.get(
+        "https://api.clerk.com/v1/sessions",
+        headers=headers
+    )
+
+    if response.status_code == 200:
+        session_data = response.json()
+        # You can now map Clerk user to your Django user model
+        return JsonResponse(session_data)
+    else:
+        return JsonResponse({"error": "Invalid session"}, status=403)
+    
+ 

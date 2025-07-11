@@ -22,6 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-**^$$bew+8v7=xrk1p@kix6%@ir=hjnj=2(wil2)0s!d7)w!--"
 
+# settings.py
+CLERK_FRONTEND_API = "https://real-mammal-2.clerk.accounts.dev"
+CLERK_SECRET_KEY = "sk_test_qRRwIMBwM6igXPRm6taL9dGV0HL7osniMo8zikpr56"
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

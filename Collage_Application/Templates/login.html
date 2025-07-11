@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script src="https://clerk.dev/clerk.js"></script>
+  <script>p
+    window.Clerk.load({
+      frontendApi: "https://real-mammal-2.clerk.accounts.dev", 
+      signInUrl: "/login"
+    });
+  </script>
+</head>
+<body>
+  <div id="sign-in">
+    <a href="https://real-mammal-2.accounts.dev/sign-in"> Login</a></div>
+  <script>
+    Clerk.mountSignIn('#sign-in');
+  </script>
+</body>
+</html>
