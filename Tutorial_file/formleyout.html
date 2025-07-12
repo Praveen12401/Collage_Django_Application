@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vw;
+            width: 100vw;
+        }
+        .form{
+            width: 50%;
+            height: 65%;
+            display: flex;
+            border: 2px solid greenyellow;
+           flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .button{
+            width: 100%;
+            display: flex;
+             align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+
+        <input type="text" name="fname" placeholder="inter full name">
+        <input type="email" name="email" placeholder="inter email abc@gmail.com">
+        <input type="password" name="pass" placeholder="*******">
+        <input type="number" name="age" placeholder="inter your age">
+        <div class="btn">
+            <button type="submit">Register</button>
+            <button type="reset">clear form</button>
+            <button type="button">Go to Login</button>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
