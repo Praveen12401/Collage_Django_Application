@@ -1,4 +1,4 @@
-#!/workspaces/Collage_Django_Application/.venv/bin/python3
+#!/workspaces/Collage_Django_Application/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
