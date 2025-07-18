@@ -29,6 +29,6 @@ def contact_view(request):
     else:
         form = ContactForm()
     
-    return render(request, 'editor/contact.html', {'form': form})
+    return render(request, 'editor/contact_us.html', {'form': form})
 
     

@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'editor',
-    'django_clerk',
+    # 'django_clerk',
  
     
 ]
@@ -63,7 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'django_clerk.middleware.ClerkMiddleware',
+    # 'django_clerk.middleware.ClerkMiddleware',
 ]
 
 ROOT_URLCONF = "Application.urls"
