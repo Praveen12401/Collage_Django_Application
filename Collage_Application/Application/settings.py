@@ -78,6 +78,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                
             ],
         },
     },
@@ -95,6 +96,7 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
 
 
 # Password validation
@@ -146,10 +148,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # mail code her written
   
    
-STATIC_URL = "/static/"
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'praveenyadav16178@gmail.com'
-EMAIL_HOST_PASSWORD = 123
+# STATIC_URL = "/static/"
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'praveenyadav16178@gmail.com'
+# EMAIL_HOST_PASSWORD = 123          

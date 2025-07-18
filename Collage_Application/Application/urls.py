@@ -23,10 +23,10 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('',views.Home,name="Home"),
     path('about/',views.about,name="about"),
-    path('contact/',views.contacts,name="contacts"),
+    path('contacts/',views.contacts,name="contacts"),
     path('editor/',include("editor.urls"),name="editor"),
-    path('login/',views.login,name="login"),
-    path('send_mail_page/',views.send_mail_page,name="send_mail_page"), 
-    path('clerk/callback/', views.clerk_callback, name='clerk_callback'), 
+    # path('login/',views.login,name="login"),
+    # path('send_mail_page/',views.send_mail_page,name="send_mail_page"), 
+    # path('clerk/callback/', views.clerk_callback, name='clerk_callback'), 
 ]
  
