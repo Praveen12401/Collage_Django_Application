@@ -1,0 +1,7 @@
+ 
+  .messages { list-style-type: none; padding: 0; }
+  .messages li { padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+  .messages li.error { background-color: #f8d7da; color: #721c24; }
+  .messages li.success { background-color: #d4edda; color: #155724; }
+  /* Add more styles for info, warning, etc. if you want */
+ 
