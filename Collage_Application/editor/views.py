@@ -31,4 +31,9 @@ def contact_view(request):
     
     return render(request, 'editor/contact_us.html', {'form': form})
 
+def user_form(request):   
+    if request.method == 'POST':
+        pass
+    return  render(request,'editor/user_form.html')
+
     
